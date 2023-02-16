@@ -4,6 +4,6 @@ COPY . .
 
 RUN pip3 install -r requirements.txt
 
-CMD uvicorn app:api --port 8050
+CMD uvicorn app:api --port 8050 --reload 
 
 EXPOSE 8050
