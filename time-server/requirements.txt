@@ -1,0 +1,7 @@
+DateTime
+requests
+fastapi
+uvicorn[standard]
+loguru
+ntplib
+base64
