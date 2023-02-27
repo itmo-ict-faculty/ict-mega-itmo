@@ -1,0 +1,6 @@
+DateTime
+requests
+fastapi
+uvicorn[standard]
+loguru
+pymongo
