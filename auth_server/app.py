@@ -19,6 +19,7 @@ def startup() -> None:
     if not os.getenv('MONGODB_CONN_STR'):
         logger.critical('No MONGODB_CONN_STR environment variable found')
         exit(1)
+    print(os.getenv('TIMESERVER_URL'))
     logger.success('All envvars are present, server successfully started')
 
 

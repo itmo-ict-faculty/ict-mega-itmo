@@ -8,7 +8,7 @@ class _Mongo:
         conn_str = os.getenv('MONGODB_CONN_STR')
         if not conn_str:
             raise IOError('MONGODB_CONN_STR not specified')
-        mongo_client_url = f"{str(conn_str)}/&ssl=true&tlsAllowInvalidCertificates=true"
+        mongo_client_url = str(conn_str)
         self.mongo: MongoClient = MongoClient(mongo_client_url)
         self._db = self.mongo['auth']
         self._users_collection = self._db['users']
